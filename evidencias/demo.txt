@@ -1,0 +1,29 @@
+1) Cadastro de 'ana' (a senha NÃO é guardada; só salt + hash)
+  usuário:   ana
+  algoritmo: pbkdf2_sha256 | iterações: 600000
+  salt:      ZeWVzpH0RrgcK4Rf3OS4PA==
+  hash:      Z8wibX03SmXUsm/AcG1dR3IjLZ4APcfOJh5FcD4q9/0=
+
+   Senha em texto puro no banco? NÃO
+
+2) Outro usuário com a MESMA senha (o salt muda, então o hash muda)
+   mesmo salt?  NÃO
+   mesmo hash?  NÃO
+
+3) Login com a senha correta
+   ana  -> ACEITO
+
+4) Login com senha errada
+   ana  -> RECUSADO
+
+5) Login com usuário que não existe (mesma resposta, sem pistas)
+   zeca -> RECUSADO
+
+6) Cadastro com senhas fracas
+   'abc123' -> recusada: Senha muito curta: mínimo de 8 caracteres (recomendado: 15 ou mais).
+   '12345678' -> recusada: Senha muito comum. Escolha outra.
+
+7) Por que SHA-256 sozinho não serve para senhas
+   SHA-256 puro:  ~913,009 tentativas por segundo
+   PBKDF2 600 mil iterações: ~11.4 tentativas por segundo
+   O atacante fica ~79,997 vezes mais lento.

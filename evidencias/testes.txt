@@ -1,0 +1,23 @@
+test_algoritmo_iteracoes_salt_e_hash (__main__.TestAuth.test_algoritmo_iteracoes_salt_e_hash) ... ok
+test_cadastro_e_login_corretos (__main__.TestAuth.test_cadastro_e_login_corretos) ... ok
+test_hash_antigo_e_atualizado_no_login (__main__.TestAuth.test_hash_antigo_e_atualizado_no_login) ... ok
+test_login_com_senha_errada (__main__.TestAuth.test_login_com_senha_errada) ... ok
+test_login_com_usuario_inexistente (__main__.TestAuth.test_login_com_usuario_inexistente) ... ok
+test_normalizacao_unicode (__main__.TestAuth.test_normalizacao_unicode) ... ok
+test_salt_unico_por_usuario (__main__.TestAuth.test_salt_unico_por_usuario) ... ok
+test_sem_regra_de_composicao (__main__.TestAuth.test_sem_regra_de_composicao) ... ok
+test_senha_comum_recusada (__main__.TestAuth.test_senha_comum_recusada) ... ok
+test_senha_curta_recusada (__main__.TestAuth.test_senha_curta_recusada) ... ok
+test_senha_enorme_nao_trava (__main__.TestAuth.test_senha_enorme_nao_trava) ... ok
+test_senha_igual_ao_usuario_recusada (__main__.TestAuth.test_senha_igual_ao_usuario_recusada) ... ok
+test_senha_muito_longa_recusada (__main__.TestAuth.test_senha_muito_longa_recusada) ... ok
+test_senha_nao_fica_em_texto_puro (__main__.TestAuth.test_senha_nao_fica_em_texto_puro) ... ok
+test_sql_injection_no_login (__main__.TestAuth.test_sql_injection_no_login) ... ok
+test_usuario_duplicado_recusado (__main__.TestAuth.test_usuario_duplicado_recusado) ... ok
+test_usuario_invalido_recusado (__main__.TestAuth.test_usuario_invalido_recusado) ... ok
+test_usuario_nao_diferencia_maiuscula (__main__.TestAuth.test_usuario_nao_diferencia_maiuscula) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 2.261s
+
+OK
